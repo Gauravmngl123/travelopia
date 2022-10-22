@@ -1,0 +1,92 @@
+/*
+Theme Name: Twenty Twenty Child
+Theme URI: https://wp-themes.com/twentytwenty
+Author: ChildThemeWP.com
+Author URI: https://childthemewp.com
+Description: My WordPress Twenty Twenty child theme.
+Template: twentytwenty
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Version: 1.0.0
+Text Domain: twentytwenty-child
+*/
+
+
+.header-footer-group .entry-header-inner, .powered-by-wordpress {
+	display: none;
+}
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: 100%;
+	width: 100%;
+}
+
+
+.entry-content {
+	position: relative;
+}
+
+@media (min-width: 767px) {
+	.singular .entry-header {
+		padding: 0rem 0;
+	}
+	.post-inner {
+		padding-top: 0;
+	}
+	.footer-top-visible .footer-nav-widgets-wrapper, .footer-top-hidden #site-footer {
+		margin-top: 0;
+	}
+	.wp-block-archives:not(.alignwide):not(.alignfull), .wp-block-categories:not(.alignwide):not(.alignfull), .wp-block-code, .wp-block-columns:not(.alignwide):not(.alignfull), .wp-block-cover:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter), .wp-block-embed:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter), .wp-block-gallery:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter), .wp-block-group:not(.has-background):not(.alignwide):not(.alignfull), .wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter), .wp-block-latest-comments:not(.aligncenter):not(.alignleft):not(.alignright), .wp-block-latest-posts:not(.aligncenter):not(.alignleft):not(.alignright), .wp-block-media-text:not(.alignwide):not(.alignfull), .wp-block-preformatted, .wp-block-pullquote:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright), .wp-block-quote, .wp-block-quote.is-large, .wp-block-quote.is-style-large, .wp-block-verse, .wp-block-video:not(.alignwide):not(.alignfull){
+		margin: 0;
+	}
+	.section {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+		padding: 20% 0;
+	}
+	.section h2 {
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.section .read-more {
+		color: #fff;
+		text-transform: uppercase;
+		padding: 12px 25px;
+		text-decoration: none;
+	}
+	.section .read-more:hover {
+		background-color: #000;
+		text-decoration: none;
+	}
+	.wp-block-image.size-full:before {
+		width: 100%;
+		content: '';
+		background-color: rgb(0 0 0 / 70%);
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		height: 100%;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.singular .entry-header {
+		background-color: #fff;
+		padding: 0;
+	}
+	.post-inner {
+		padding-top: 0;
+	}
+	.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+		margin: 0;
+	}
+	.section {
+		text-align: center;
+	}
+}
